@@ -1,0 +1,30 @@
+{
+  "name": "dev-loop-pipeline",
+  "version": "1.0.0",
+  "description": "Skill-based dev loop pipeline — spec-freeze → impl-scout → code-write → qa-gate → pr-package",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 5173",
+    "build": "next build",
+    "start": "next start --port 5173",
+    "test": "bun test src/lib/__tests__",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "check": "biome check --write ."
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "jsonrepair": "^3.14.0",
+    "next": "15.3.2",
+    "openai": "^4.67.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

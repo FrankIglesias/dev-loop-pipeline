@@ -1,0 +1,49 @@
+.box {
+  background: #0a0a0c;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.8;
+  max-height: 320px;
+  overflow-y: auto;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box::-webkit-scrollbar {
+  width: 4px;
+}
+
+.box::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.empty {
+  color: var(--muted);
+}
+
+.line {
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.info {
+  color: var(--text);
+}
+.muted {
+  color: var(--muted);
+}
+.accent {
+  color: var(--accent);
+}
+.green {
+  color: var(--green);
+}
+.red {
+  color: var(--red);
+}

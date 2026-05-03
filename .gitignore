@@ -1,0 +1,8 @@
+node_modules/
+.next/
+dist/
+
+# Pipeline run logs — kept locally for debugging
+.pipeline-runs/
+node_modules/
+.next/
