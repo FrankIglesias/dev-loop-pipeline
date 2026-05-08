@@ -1,6 +1,6 @@
 # dev-loop-pipeline
 
-A five-skill AI pipeline for a structured feature dev loop. Runs entirely in the browser — no CLI, no terminal required. Built for the Alago case study.
+A five-skill AI pipeline for a structured feature dev loop. Runs entirely in the browser — no CLI, no terminal required.
 
 ```
 spec-freeze → impl-scout → code-write → qa-gate → pr-package
@@ -21,6 +21,13 @@ Each skill owns one responsibility and produces a typed JSON output that becomes
 | LLM providers | LM Studio (default), Anthropic, OpenAI |
 | JSON recovery | `jsonrepair` — 3-layer fallback parse |
 | Tests | `bun test` |
+
+---
+
+## Prerequisites
+
+- **[LM Studio](https://lmstudio.ai/)** — required as the default local LLM provider. Install it, download a model (e.g. `llama3.2`), and start its local server (default `http://localhost:1234/v1`). Anthropic and OpenAI are optional alternatives.
+- **[Bun](https://bun.sh/)** 1.1+
 
 ---
 

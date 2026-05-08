@@ -17,7 +17,7 @@ export default function PipelineApp() {
     ticketId: '',
     provider: 'lmstudio',
     model: '',
-    repoPath: '/Users/francisco/Desktop/beacon',
+    repoPath: '',
     ticketText: '',
   });
 
